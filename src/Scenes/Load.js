@@ -26,6 +26,9 @@ class Load extends Phaser.Scene {
         // The multiatlas was created using TexturePacker and the Kenny
         // Particle Pack asset pack.
         this.load.multiatlas("kenny-particles", "kenny-particles.json");
+
+        //text
+        this.load.bitmapFont("rocketSquare", "KennyRocketSquare_0.png", "KennyRocketSquare.fnt");
     }
 
     create() {
@@ -57,6 +60,17 @@ class Load extends Phaser.Scene {
             frames: [
                 { frame: "tile_0001.png" }
             ],
+        });
+
+        this.anims.create({
+            key: 'coinSpin',
+            defaultTextureKey: "tilemap_sheet",
+            frames: [
+                { frame: 151 },
+                { frame: 152 }
+            ],
+            frameRate: 4,
+            repeat: -1
         });
 
          // ...and pass to the next Scene

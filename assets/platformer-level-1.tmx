@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="48" height="25" tilewidth="18" tileheight="18" infinite="0" nextlayerid="3" nextobjectid="47">
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="48" height="25" tilewidth="18" tileheight="18" infinite="0" nextlayerid="3" nextobjectid="71">
  <editorsettings>
   <export target="platformer-level-1.tmj" format="json"/>
  </editorsettings>
@@ -205,6 +205,12 @@
     <property name="collides" type="bool" value="true"/>
    </properties>
   </tile>
+  <tile id="151">
+   <animation>
+    <frame tileid="151" duration="300"/>
+    <frame tileid="152" duration="300"/>
+   </animation>
+  </tile>
  </tileset>
  <layer id="1" name="Ground-n-Platforms" width="48" height="25">
   <data encoding="csv">
@@ -235,5 +241,30 @@
 123,123,123,123,123,123,123,123,124,63,63,63,63,63,63,122,123,123,123,123,123,123,123,123,123,123,124,63,63,63,63,63,63,122,123,123,123,123,123,123,123,123,123,124,74,74,74,74
 </data>
  </layer>
- <objectgroup id="2" name="Objects"/>
+ <objectgroup id="2" name="Objects">
+  <object id="47" name="coin" gid="152" x="682.822" y="116.271" width="18" height="18"/>
+  <object id="48" name="coin" gid="152" x="574.773" y="162.134" width="18" height="18"/>
+  <object id="49" name="coin" gid="152" x="394.433" y="118.603" width="18" height="18"/>
+  <object id="50" name="coin" gid="152" x="382.773" y="287.283" width="18" height="18"/>
+  <object id="51" name="coin" gid="152" x="407.648" y="289.615" width="18" height="18"/>
+  <object id="52" name="coin" gid="152" x="437.186" y="291.17" width="18" height="18"/>
+  <object id="53" name="coin" gid="152" x="418.53" y="269.405" width="18" height="18"/>
+  <object id="54" name="coin" gid="152" x="399.097" y="269.405" width="18" height="18"/>
+  <object id="55" name="coin" gid="152" x="412.312" y="249.194" width="18" height="18"/>
+  <object id="56" name="coin" gid="152" x="55.5182" y="233.648" width="18" height="18"/>
+  <object id="57" name="coin" gid="152" x="65.6235" y="248.417" width="18" height="18"/>
+  <object id="58" name="coin" gid="152" x="85.0567" y="265.518" width="18" height="18"/>
+  <object id="59" name="coin" gid="152" x="95.9393" y="264.741" width="18" height="18"/>
+  <object id="60" name="coin" gid="152" x="109.154" y="266.296" width="18" height="18"/>
+  <object id="61" name="coin" gid="152" x="118.482" y="254.636" width="18" height="18"/>
+  <object id="62" name="coin" gid="152" x="137.138" y="233.648" width="18" height="18"/>
+  <object id="63" name="coin" gid="152" x="80.3927" y="225.097" width="18" height="18"/>
+  <object id="64" name="coin" gid="152" x="83.502" y="210.328" width="18" height="18"/>
+  <object id="65" name="coin" gid="152" x="82.7247" y="196.336" width="18" height="18"/>
+  <object id="66" name="coin" gid="152" x="106.822" y="230.538" width="18" height="18"/>
+  <object id="67" name="coin" gid="152" x="106.822" y="212.66" width="18" height="18"/>
+  <object id="68" name="coin" gid="152" x="107.599" y="192.449" width="18" height="18"/>
+  <object id="69" name="player" gid="112" x="71.0648" y="357.243" width="18" height="18"/>
+  <object id="70" name="powerup" gid="68" x="692.927" y="316.045" width="18" height="18"/>
+ </objectgroup>
 </map>
